@@ -1,0 +1,59 @@
+.app{
+    display: inline-block;
+    margin: 20vh 10% 10vh 10%;
+    width: 80%;
+    height: 40vh;
+    border: 1px solid red;
+    padding: 1vh;
+}
+.app h2{
+    color: red;
+    text-decoration: underline;
+    float: right;
+    text-align: center;
+    font-size: 30px;
+    width: 65%;
+    line-height: 10vh;
+}
+#appicon{
+    float: left;
+    width: 28%;
+    height: 80%;
+    margin-left: 5%;
+    margin-top: 4vh;
+}
+.infor{
+    float: right;
+    width: 60%;
+    margin-left: 4vh;
+    margin-right: 3%;
+    height: 40%;
+    overflow: auto;
+}
+.infor p{
+    text-align: justify;
+}
+.getiton{
+    height: 15%;
+    margin: 5vh 10vh 0 0;
+    float: right;
+}
+.subimg{
+    width: 100%;
+    margin: 0 10%;   
+    height: 25vh;
+    float: left;
+    margin-left: 0;
+    margin-top: 5vh;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+.subimg img{
+    width: 25%;
+    height: 90%;
+    display: inline-block;
+    margin: 0 5vh;
+}
+.addto{
+    margin-right: 5vh;
+}
