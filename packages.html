@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>May Hnin Si</title>
+    <link rel="stylesheet" type="text/css" href="respices.css" />
+    <script
+      src="https://kit.fontawesome.com/02cf822268.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="navigation-and-main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="packages.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="heading">
+        <a href="index.html" style="color: white">Packages📦</a>
+      </div>
+      <div class="status">
+        <img src="Images/status.png" alt="Status LOGO" />
+      </div>
+    </nav>
+    <div class="navi sticky">
+      <a href="index.html" id="homenavi">Home <i class="fa fa-home"></i></a>
+      <div class="dropdown">
+        <button
+          class="dropbtn"
+          style="background-color: white; cursor: pointer"
+        >
+          Shop Now! <i class="fa fa-shopping-cart"></i>
+          <i class="fa fa-caret-down">
+            <i class="fa fa-box" style="color: red"></i
+          ></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="respices.html"
+            >Recipes <i class="fa-solid fa-utensils"></i
+          ></a>
+          <a href="plans.html">Plans <i class="fa fa-flag"></i></a>
+          <a href="packages.html" class="active"
+            >Packages <i class="fa fa-box"></i
+          ></a>
+          <a href="bakeathomeset.html"
+            >Bake at Home Sets <i class="fa fa-box"></i
+          ></a>
+        </div>
+      </div>
+      <a href="contact.html">Contact Us <i class="fa fa-phone"></i></a>
+      <input type="search" name="" id="" placeholder="Search Here🔍" />
+    </div>
+    <div id="myBtnContainer">
+      <button class="btn1 actives" onclick="filterSelection('all')">
+        Show all
+      </button>
+      <button class="btn1" onclick="filterSelection('breakfast')">
+        Beginner
+      </button>
+      <button class="btn1" onclick="filterSelection('lunch')">Everyday</button>
+      <button class="btn1" onclick="filterSelection('dinner')">Deluex</button>
+    </div>
+    <div class="what">
+      <div class="filterDiv breakfast">
+        <img src="photos/begpac2.webp" alt="" />
+        <div class="sidediv">
+          <i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i>
+        </div>
+        <button id="detailshows" style="margin-top: 1%">
+          Show more details
+        </button>
+        <div class="model" id="detailmodels">
+          <div class="modelcontent">
+            <span class="close">&times;</span>
+            <img src="Images/breakfast.jpg" alt="" />
+            <ul class="just">
+              <li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
+              <li><label for="">Price:</label> 1000Ks</li>
+              <li><label for="">Calories:</label> 600cals</li>
+              <li>
+                <label for="">Rating:</label>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </li>
+              <li><label for="">Categories:</label> Breakfast</li>
+            </ul>
+            <div class="subimg">
+              <img src="photos/beginpac1.webp" alt="" />
+              <img src="photos/begpac.webp" alt="" />
+              <img src="photos/begpac2.webp" alt="" />
+            </div>
+            <div class="addto">
+              <label for="">Quantity: </label
+              ><input
+                type="number"
+                name=""
+                id=""
+                placeholder="The number of dish (the default is 1)"
+                value="1"
+              />
+              <button type="submit">
+                Add to cart <i class="fa fa-cart"></i>
+              </button>
+            </div>
+          </div>
+          <script>
+            var modal = document.getElementById("detailmodels");
+            var butt = document.getElementById("detailshows");
+            var span = document.getElementsByClassName("close")[0];
+            butt.onclick = function () {
+              modal.style.display = "block";
+            };
+            span.onclick = function () {
+              modal.style.display = "none";
+            };
+            window.onclick = function (event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            };
+          </script>
+        </div>
+      </div>
+      <div class="filterDiv lunch">
+        <img src="Images/lunch.jpg" alt="" />
+        <div class="sidediv">
+          <i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i>
+        </div>
+        <button id="detailshow2" style="margin-top: 1%">
+          Show more details
+        </button>
+        <div class="model" id="detailmodel2">
+          <div class="modelcontent">
+            <span class="close">&times;</span>
+            <img src="Images/breakfast.jpg" alt="" />
+            <ul class="just">
+              <li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
+              <li><label for="">Price:</label> 1000Ks</li>
+              <li><label for="">Calories:</label> 600cals</li>
+              <li>
+                <label for="">Rating:</label>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </li>
+              <li><label for="">Categories:</label> Breakfast</li>
+            </ul>
+            <div class="subimg">
+              <img src="photos/begpac3.webp" alt="" />
+              <img src="photos/deluxe1.webp" alt="" />
+              <img src="photos/deluxe2.webp" alt="" />
+            </div>
+            <div class="addto">
+              <label for="">Quantity: </label
+              ><input
+                type="number"
+                name=""
+                id=""
+                placeholder="The number of dish (the default is 1)"
+                value="1"
+              />
+              <button type="submit">
+                Add to cart <i class="fa fa-cart"></i>
+              </button>
+            </div>
+          </div>
+          <script>
+            var modal = document.getElementById("detailmodel2");
+            var butt = document.getElementById("detailshow2");
+            var span = document.getElementsByClassName("close")[0];
+            butt.onclick = function () {
+              modal.style.display = "block";
+            };
+            span.onclick = function () {
+              modal.style.display = "none";
+            };
+            window.onclick = function (event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            };
+          </script>
+        </div>
+      </div>
+      <div class="filterDiv dinner">
+        <img src="Images/dinner.jpg" alt="" />
+        <div class="sidediv">
+          <i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i>
+        </div>
+        <button id="detailshow1" style="margin-top: 1%">
+          Show more details
+        </button>
+        <div class="model" id="detailmodel1">
+          <div class="modelcontent">
+            <span class="close">&times;</span>
+            <img src="Images/breakfast.jpg" alt="" />
+            <ul class="just">
+              <li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
+              <li><label for="">Price:</label> 1000Ks</li>
+              <li><label for="">Calories:</label> 600cals</li>
+              <li>
+                <label for="">Rating:</label>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </li>
+              <li><label for="">Categories:</label> Breakfast</li>
+            </ul>
+            <div class="subimg">
+              <img src="photos/deluxe3.webp" alt="" />
+              <img src="photos/deluxe4.webp" alt="" />
+              <img src="photos/deluxe5.webp" alt="" />
+            </div>
+            <div class="addto">
+              <label for="">Quantity: </label
+              ><input
+                type="number"
+                name=""
+                id=""
+                placeholder="The number of dish (the default is 1)"
+                value="1"
+              />
+              <button type="submit">
+                Add to cart <i class="fa fa-cart"></i>
+              </button>
+            </div>
+          </div>
+          <script>
+            var modal = document.getElementById("detailmodel1");
+            var butt = document.getElementById("detailshow1");
+            var span = document.getElementsByClassName("close")[0];
+            butt.onclick = function () {
+              modal.style.display = "block";
+            };
+            span.onclick = function () {
+              modal.style.display = "none";
+            };
+            window.onclick = function (event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            };
+          </script>
+        </div>
+      </div>
+      <div class="filterDiv breakfast">
+        <img src="photos/vegrecp.jpeg" alt="" />
+        <div class="sidediv">
+          <i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i>
+        </div>
+        <button id="detailshow3" style="margin-top: 1%">
+          Show more details
+        </button>
+        <div class="model" id="detailmodel3">
+          <div class="modelcontent">
+            <span class="close">&times;</span>
+            <img src="Images/breakfast.jpg" alt="" />
+            <ul class="just">
+              <li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
+              <li><label for="">Price:</label> 1000Ks</li>
+              <li><label for="">Calories:</label> 600cals</li>
+              <li>
+                <label for="">Rating:</label>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </li>
+              <li><label for="">Categories:</label> Breakfast</li>
+            </ul>
+            <div class="subimg">
+              <img src="photos/every1.webp" alt="" />
+              <img src="photos/every2.webp" alt="" />
+              <img src="photos/every3.webp" alt="" />
+            </div>
+            <div class="addto">
+              <label for="">Quantity: </label
+              ><input
+                type="number"
+                name=""
+                id=""
+                placeholder="The number of dish (the default is 1)"
+                value="1"
+              />
+              <button type="submit">
+                Add to cart <i class="fa fa-cart"></i>
+              </button>
+            </div>
+          </div>
+          <script>
+            var modal = document.getElementById("detailmodel3");
+            var butt = document.getElementById("detailshow3");
+            var span = document.getElementsByClassName("close")[0];
+            butt.onclick = function () {
+              modal.style.display = "block";
+            };
+            span.onclick = function () {
+              modal.style.display = "none";
+            };
+            window.onclick = function (event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            };
+          </script>
+        </div>
+      </div>
+      <div class="filterDiv lunch">
+        <img src="photos/vegrecp5.jpeg" alt="" />
+        <div class="sidediv">
+          <i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i>
+        </div>
+        <button id="detailshow8" style="margin-top: 1%">
+          Show more details
+        </button>
+        <div class="model" id="detailmodel8">
+          <div class="modelcontent">
+            <span class="close">&times;</span>
+            <img src="Images/breakfast.jpg" alt="" />
+            <ul class="just">
+              <li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
+              <li><label for="">Price:</label> 1000Ks</li>
+              <li><label for="">Calories:</label> 600cals</li>
+              <li>
+                <label for="">Rating:</label>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </li>
+              <li><label for="">Categories:</label> Breakfast</li>
+            </ul>
+            <div class="subimg">
+              <img src="photos/begpac2.webp" alt="" />
+              <img src="photos/begpac3.webp" alt="" />
+              <img src="photos/every1.webp" alt="" />
+            </div>
+            <div class="addto">
+              <label for="">Quantity: </label
+              ><input
+                type="number"
+                name=""
+                id=""
+                placeholder="The number of dish (the default is 1)"
+                value="1"
+              />
+              <button type="submit">
+                Add to cart <i class="fa fa-cart"></i>
+              </button>
+            </div>
+          </div>
+          <script>
+            var modal = document.getElementById("detailmodel8");
+            var butt = document.getElementById("detailshow8");
+            var span = document.getElementsByClassName("close")[0];
+            butt.onclick = function () {
+              modal.style.display = "block";
+            };
+            span.onclick = function () {
+              modal.style.display = "none";
+            };
+            window.onclick = function (event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            };
+          </script>
+        </div>
+      </div>
+
+      <div class="filterDiv dinner">
+        <img src="photos/healthyrecp3.jpeg" alt="" />
+        <div class="sidediv">
+          <i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i>
+        </div>
+        <button id="detailshow13" style="margin-top: 1%">
+          Show more details
+        </button>
+        <div class="model" id="detailmodel13">
+          <div class="modelcontent">
+            <span class="close">&times;</span>
+            <img src="Images/breakfast.jpg" alt="" />
+            <ul class="just">
+              <li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
+              <li><label for="">Price:</label> 1000Ks</li>
+              <li><label for="">Calories:</label> 600cals</li>
+              <li>
+                <label for="">Rating:</label>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </li>
+              <li><label for="">Categories:</label> Breakfast</li>
+            </ul>
+            <div class="subimg">
+              <img src="photos/vegrecp2.jpeg" alt="" />
+              <img src="photos/vegrecp3.jpeg" alt="" />
+              <img src="photos/vegrecp4.jpeg" alt="" />
+            </div>
+            <div class="addto">
+              <label for="">Quantity: </label
+              ><input
+                type="number"
+                name=""
+                id=""
+                placeholder="The number of dish (the default is 1)"
+                value="1"
+              />
+              <button type="submit">
+                Add to cart <i class="fa fa-cart"></i>
+              </button>
+            </div>
+          </div>
+          <script>
+            var modal = document.getElementById("detailmodel13");
+            var butt = document.getElementById("detailshow13");
+            var span = document.getElementsByClassName("close")[0];
+            butt.onclick = function () {
+              modal.style.display = "block";
+            };
+            span.onclick = function () {
+              modal.style.display = "none";
+            };
+            window.onclick = function (event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            };
+          </script>
+        </div>
+      </div>
+    </div>
+    <script>
+      filterSelection("all");
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContaine1r = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn1");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("actives");
+          current[0].className = current[0].className.replace(" actives", "");
+          this.className += " actives";
+        });
+      }
+    </script>
+    <div class="app">
+      <h2>Nutritional App</h2>
+      <img src="photos/applogo.png" alt="" id="appicon" />
+      <div class="infor">
+        <p>
+          &nbsp; &nbsp; &nbsp; MyPlate Calories Tracker is full-featured
+          subscription-based diet app. It contains a nutritional database of 2
+          million items, and includes the ability to track calories,
+          macronutrients and water intake, and see if you’re meeting your diet
+          goals. You can also generate graphs and charts that help you to
+          visualize and assess your food habits.While their nutritional database
+          is large, it's not as comprehensive as the aforementioned app
+          MyFitnessPal’s Calorie Counter & Diet Tracker. And unlike MyNetDiary's
+          Calorie Counter & Food Diary, you cannot track exercise. Like both
+          those tools, full functionality requires a subscription ($9.99 per
+          month or $44.99 per year).
+        </p>
+      </div>
+      <a href="https://play.google.com/store/games?hl=en&gl=US"
+        ><img src="photos/getiton.png" alt="" class="getiton" /></a
+      ><a href="https://www.apple.com/app-store/"
+        ><img src="photos/applestore.png" alt="" class="getiton"
+      /></a>
+    </div>
+  </body>
+  <footer>
+    <div class="letter">
+      <strong
+        >If you have a product that you are interested in, please write to us.
+        Please include as many details as possible in your enquires. Your inputs
+        will gleatly help us to serve you better.</strong
+      >
+      <form action="#" method="post">
+        <div class="A">
+          <input type="text" name="Name" id="" placeholder="Name" />
+          <input type="email" name="Email" id="" placeholder="Email" />
+          <input type="text" name="Respices" id="" placeholder="Respices" />
+        </div>
+        <div class="B">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Give feedback here"
+          ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="contact">
+      <div class="same upper">
+        <h1>Contact Us On</h1>
+        <ul>
+          <li><i class="fa fa-phone"></i>01 - 123456</li>
+          <li><i class="fa fa-envelope"></i>mayhninsi@gmail.com</li>
+        </ul>
+      </div>
+      <div class="same down">
+        <h1>Follow Us On</h1>
+        <ul>
+          <li><i class="fa fa-facebook"></i></li>
+          <li><i class="fa fa-instagram"></i></li>
+          <li><i class="fa fa-twitter"></i></li>
+          <li><i class="fa fa-youtube"></i></li>
+          <li><i class="fa fa-pinterest"></i></li>
+        </ul>
+      </div>
+    </div>
+    <p>Copyright © 2022 mayhninsi.com All Rights Reserved.</p>
+  </footer>
+</html>

@@ -1,0 +1,339 @@
+nav {
+  width: 100%;
+  height: 25vh;
+  background-image: url("Images/background.jpg");
+  position: absolute;
+}
+.contents {
+  height: 370vh;
+  width: 100%;
+}
+.coverimg {
+  /*20% + a little height of the contents*/
+  height: 65vh;
+  width: 80%;
+  margin: 0 10%;
+  margin-top: 7vh;
+  display: inline-block;
+  background-image: url("Images/cover.jpg");
+  box-shadow: 0 5px 8px 3px rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
+}
+.description {
+  color: white;
+  width: 40%;
+  height: 85%; /*55.25vh*/
+  margin: 2% 50% 2.5% 2.5%;
+  background-color: rgba(112, 112, 112, 0.7);
+  border-radius: 50px;
+  padding: 15px;
+  border: solid 1px black;
+  box-shadow: 0 5px 8px 3px rgba(0, 0, 0, 0.9);
+}
+.description *:not(h1) {
+  font-size: large;
+}
+.description h1 {
+  margin: 4vh 12%;
+  width: 76%;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.9);
+  border-radius: 25px;
+  padding: 8px 0;
+}
+.listp {
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  margin-top: 2vh;
+}
+.listp * {
+  line-height: 4vh;
+}
+.listp ul {
+  margin-left: 5vh;
+}
+.listp i {
+  float: right;
+}
+.leftlistp {
+  width: 52%;
+  float: right;
+}
+.button {
+  display: inline-block;
+  width: 100%;
+  height: 20%; /*11.05vh*/
+}
+.button button {
+  background-color: rgba(255, 255, 255, 0.7);
+  float: right;
+  height: 80%;
+  width: 25%;
+  margin: -3vh 10% 0 0;
+  border-radius: 30px;
+}
+.button button:hover {
+  transition: all 300ms 450ms;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.9);
+  transform: scale(1.1) translateX(10px);
+}
+/*===========================================*/
+.packages {
+  margin: 10vh 10% 0 10%;
+  width: 80%;
+  height: 90vh;
+  display: inline-block;
+}
+.packages #get {
+  text-align: center;
+}
+#get {
+  font-size: 30px;
+  display: inline-block;
+  width: 70%;
+  height: 6vh;
+  margin: 0 15%;
+  border: double black;
+  border-width: 0 0 3px 0;
+}
+.packages p {
+  margin-left: 2vh;
+  font-size: 20px;
+}
+table {
+  float: left;
+}
+table,
+th,
+td {
+  border: 1px solid #dc281e;
+  border-collapse: collapse;
+}
+td {
+  border-style: hidden solid hidden solid;
+}
+th {
+  text-decoration: underline;
+  font-size: 25px;
+}
+.packages table {
+  width: 60%;
+  margin: 3vh 0 0 6%;
+  box-shadow: 0 2px 5px 0;
+}
+.packages tr {
+  height: 13vh;
+}
+.packages a {
+  color: white;
+  padding: 2vh;
+  text-decoration: none;
+  font-size: medium;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  border: 1px solid skyblue;
+  background-color: gray;
+  border-radius: 25px;
+}
+.packages a:hover {
+  color: #ffcccb;
+  border-color: red;
+  transform: translateX(3px) translateY(-2px);
+  transition: 200ms;
+}
+.custom {
+  margin: 3vh 0 0 3vh;
+  float: left;
+  height: 78vh;
+  width: 28%;
+  color: white;
+  background: linear-gradient(to right, #dc281e, #f00000);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 0;
+}
+.custom h2 {
+  font-size: 30px;
+  margin: 3vh;
+  text-align: center;
+  margin-top: 15vh;
+}
+.custom p,
+li {
+  font-size: 18px;
+  margin: 2vh 2vh;
+}
+.custom li {
+  list-style-type: circle;
+}
+.custom ul {
+  margin-left: 4vh;
+}
+.custom button {
+  float: right;
+  margin-top: 10vh;
+  border-radius: 20px;
+  padding: 2vh;
+  margin-right: 4vh;
+  border: 2px solid black;
+}
+.custom button:hover {
+  transition: 400ms;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  transform: translateX(3px) translateY(-2px);
+  border-color: white;
+}
+/*==================================================*/
+.mealsservices {
+  overflow: auto;
+  white-space: nowrap;
+  display: inline-block;
+  height: 50vh;
+  width: 100%;
+}
+.mealsservices::-webkit-scrollbar {
+  display: none;
+}
+fieldset {
+  border: 0;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #ed213a, #93291e);
+}
+fieldset legend {
+  background-color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.items {
+  display: inline-block;
+  height: 78%;
+  width: 110%;
+  margin-top: 10vh;
+}
+.item {
+  display: inline-block;
+  width: 42vh;
+  height: 80%;
+  border: 2px solid white;
+  margin: 3vh 4vh 0 4vh;
+  background-image: url("Images/mealexample.jpg");
+  background-repeat: no-repeat;
+  background-size: 42vh 40vh;
+}
+.item2 {
+  margin: 3vh 5% 0 5%;
+  background-image: url("Images/serviceexample.jpg");
+}
+
+.item p {
+  color: white;
+  font-size: 30px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(112, 112, 112, 0.5);
+  text-align: center;
+  line-height: 29vh;
+  visibility: hidden;
+}
+.item:hover p {
+  visibility: visible;
+}
+.item:hover {
+  cursor: pointer;
+  box-shadow: 5px 3px;
+  transition: 500ms 200ms;
+  transform: translateX(1vh) translateY(-1vh);
+}
+.explore {
+  float: right;
+  height: 98%;
+  width: 20vh;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+.explore a {
+  color: black;
+  font-size: 20px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 35vh;
+  text-decoration: none;
+}
+.explore:hover {
+  border-color: rgb(250, 128, 114);
+  background-color: #1b1b1b;
+}
+.explore:hover a {
+  color: rgb(250, 128, 114);
+}
+/*=====================================*/
+.calculating {
+  display: inline-block;
+  height: 65vh;
+  width: 80%;
+  margin: 5vh 10%;
+}
+.calculatearea {
+  display: inline-block;
+  height: 85%;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #ff416c, #ff4b2b);
+  margin-top: 5.75vh;
+  box-shadow: 5px 8px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+.calculating h1 {
+  font-size: 40px;
+  margin-top: 4vh;
+  text-align: center;
+}
+.calculatearea p {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin: 3vh 0;
+}
+.calculatearea select {
+  text-align: center;
+  font-size: x-large;
+  height: 15%;
+  width: 30%;
+  border-radius: 10px;
+  border: 3px solid black;
+  cursor: pointer;
+}
+.calculatearea button {
+  height: 15%;
+  width: 20vh;
+  font-size: 20px;
+  float: right;
+  margin: 6vh 5vh 0 0;
+  border-radius: 10px;
+}
+#mealtime {
+  margin: 0 35%;
+}
+#Breakfast {
+  margin-left: 17%;
+}
+#sizess {
+  margin-left: 5%;
+}
+.calculatearea button:hover {
+  box-shadow: 5px 8px rgba(0, 0, 0, 0.7);
+  transition: 400ms 200ms;
+  transform: translateX(3vh) translateY(-2vh);
+}
+/*========================================================*/
